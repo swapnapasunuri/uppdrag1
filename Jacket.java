@@ -16,7 +16,12 @@ public class Jacket {
 	        colors.add(color);
 	    }
 
-	    
+	    //***************REMOVE
+	    public void remove(String color) {
+
+	        colors.remove(color);
+	    }
+
 	    //*****************Make LIST
 	    public List<String> toList() {
 
@@ -24,7 +29,7 @@ public class Jacket {
 	    }
 
 	    
-	    //*****************check hash
+	    //*****************Make LIST
 	    public boolean equal_hash() { 
 
 		    ArrayList<String> new_color_list =  new ArrayList<>(colors);
