@@ -39,18 +39,7 @@ public class JacketTest {
         assertTrue(jackets.contains(newColor),
                 "failure - added colour not it the collection");
     }
-
-    @Test
-    @DisplayName("removed color in the collection")
-    void remove() {
-
-        var color = "green";
-        jackets.remove(color);
-
-        assertFalse(jackets.contains(color),
-                "failure - removed color still in the collection");
-    }
-
+    
     @Test
     @DisplayName("My jackets list should match list of jacketss")
     void toList() {
