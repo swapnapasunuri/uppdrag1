@@ -24,7 +24,7 @@ public class Jacket {
 	    }
 
 	    
-	    //*****************check Hash
+	    //*****************check hash
 	    public boolean equal_hash() { 
 
 		    ArrayList<String> new_color_list =  new ArrayList<>(colors);
@@ -35,9 +35,26 @@ public class Jacket {
 	    	
 	    }
 	    
+	    //*****************Check if contains
+	    public boolean contains(String color) {
+
+	        return colors.contains(color);
+	    }
+
+	    //*****************Return size
+	    public int size() {
+
+	        return colors.size();
+	    }
 	    
+	    //*****************Remove all elements
 	    
-	    
+	    public int empty_size() {
+
+	        colors.removeAll(colors);
+	        return colors.size();
+	        
+	    }
 
 }
 	

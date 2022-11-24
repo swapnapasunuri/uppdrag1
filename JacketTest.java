@@ -39,9 +39,7 @@ public class JacketTest {
         assertTrue(jackets.contains(newColor),
                 "failure - added colour not it the collection");
     }
-
     
-
     @Test
     @DisplayName("My jackets list should match list of jacketss")
     void toList() {
@@ -56,7 +54,28 @@ public class JacketTest {
         assertEquals(colorList, myList,
                 "failure - my new jackets list didn't match");
     }
-        
+
+    @Test
+    @DisplayName("size of a jackets list should match")
+    void size() {
+
+        int jacketsSize = jackets.size();
+
+        assertEquals(6, jacketsSize,
+                "failure - size of jackets list does not match");
+    }
+	
+    @Test
+    @DisplayName("Did empty operation succeed?")
+    void empty_size() {
+    	
+    	int no_element= jackets.empty_size();
+
+        assertEquals(0, no_element,
+                "failure - size of empty jackets list does not match");
+    	
+    	
+    }
     
     @Test
     @DisplayName("Hash equal?")
